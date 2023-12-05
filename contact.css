@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #F9F5E7;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-bar{
+    background-color: #A7727D;
+    height: 80px;
+    width: 90%;
+    display: flex;/* items next to each other*/
+    align-items: center;/*center the bar items*/
+    justify-content: space-between;/* */
+    padding: 0 5%;/* the content in the middle of the bar*/
+}
+.logo{
+    background-color: #A7727D;
+    color: #F9F5E7;
+    font-family:'Edu TAS Beginner', cursive; 
+    font-size: 50px;
+}
+.logo span{
+    background-color: #A7727D;
+    color: #EDDBC7;
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+}
+/* design the search bar*/
+.search{
+    background: #A7727D;
+    display: inline;
+}
+form{
+    background-color:#A7727D;/******/
+    width: 260px;
+    height: 40px;
+}
+form input{
+    flex: 1;/*will use the intair plac ein the row*/
+    border: none;
+    outline: none;/*when i press to search no bordar will appear*/
+    height: 40px;
+    width: 190px;
+    color: #93626c;
+}
+form button{
+    padding: 11px;
+    background-color: #EDDBC7;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: #93626c;
+    cursor: grab;
+}
+form button:hover{
+    background-color: #F9F5E7;
+}
+/*design the list of links in the bar*/
+ .menu-bar ul{
+    list-style: none;/* remove the dot*/
+    display: flex;/* items next to each other*/
+ }
+
+ /*design the li each link*/
+ .menu-bar ul li{
+    background-color: #A7727D;
+    padding: 10px 30px;
+    position: relative;/**************/
+ }
+ /*design the links a*/
+ .menu-bar ul li a{
+    background-color: #A7727D;
+    text-decoration: none;
+    display: block;/**/
+    color: #EDDBC7;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+    transition: 0;/* time of transition*/
+ }
+ .menu-bar  ul li  a:hover {
+    color: #F9F5E7;
+ }
+ /*design the dropdown*/
+ #dropdown-menu{
+    display: block;
+    position: absolute;
+    width: 140px;
+    top: 40px;/* solve the dissapiring of the bar*/
+    left: 0;
+    visibility: hidden;
+    z-index: 1;/* item order of the element on the screen*/
+    cursor: grab;/**/
+    transition: 0;
+    font-size: small;
+ }
+
+ #dropdown-menu ul , #dropdown-menu li a{
+    display: block;
+    margin: 10px;
+    text-align: left;
+ }
+ li:hover ul#dropdown-menu {/* on the li menu i want the ul dropdown to appear*/
+    visibility: visible;
+    display: block;
+ }
+ /*////////////////////////////////////////////////////////////////////////////////////////*/
+ .contact{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 90px 300px;
+    text-align: center;
+    justify-content: space-between;
+    box-shadow:  rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;;
+ }
+ .contact span i{
+    font-size: 50px;
+    font-weight: bold;
+    color: #A7727D;
+ }
+ span{
+    font-size: 30px;
+    color: #93626c;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+ }
+ h3{
+    color: #93626c;
+   font-weight: lighter;
+ }
+ .btn{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+padding: 20px;
+ }
+ .add{
+    color: #93626c;
+    display: none;
+ }
+ .email:hover + .add{
+   display: inline;
+    flex-direction: column;
+    transition: all 0.10s ease-in;
+ }
+ img {
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    filter: drop-shadow(10px -10px 10px  #d3d0c3); /* x y blur color*/
+ }
+ img:hover{
+    width: 50;
+    height: 45px;
+    filter: drop-shadow(20px 20px 10px #A7727D);
+ }

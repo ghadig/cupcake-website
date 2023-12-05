@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #F9F5E7;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-bar{
+    background-color: #A7727D;
+    height: 80px;
+    width: 90%;
+    display: flex;/* items next to each other*/
+    align-items: center;/*center the bar items*/
+    justify-content: space-between;/* */
+    padding: 0 5%;/* the content in the middle of the bar*/
+}
+.logo{
+    background-color: #A7727D;
+    color: #F9F5E7;
+    font-family:'Edu TAS Beginner', cursive; 
+    font-size: 50px;
+}
+.logo span{
+    background-color: #A7727D;
+    color: #EDDBC7;
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+}
+/* design the search bar*/
+.search{
+    background: #A7727D;
+    display: inline;
+}
+form{
+    background-color:#A7727D;/******/
+    width: 260px;
+    height: 40px;
+}
+form input{
+    flex: 1;/*will use the intair plac ein the row*/
+    border: none;
+    outline: none;/*when i press to search no bordar will appear*/
+    height: 40px;
+    width: 190px;
+    color: #93626c;
+}
+form button{
+    padding: 11px;
+    background-color: #EDDBC7;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: #93626c;
+    cursor: grab;
+}
+form button:hover{
+    background-color: #F9F5E7;
+}
+/*design the list of links in the bar*/
+ .menu-bar ul{
+    list-style: none;/* remove the dot*/
+    display: flex;/* items next to each other*/
+ }
+
+ /*design the li each link*/
+ .menu-bar ul li{
+    background-color: #A7727D;
+    padding: 10px 30px;
+    position: relative;/**************/
+ }
+ /*design the links a*/
+ .menu-bar ul li a{
+    background-color: #A7727D;
+    text-decoration: none;
+    display: block;/**/
+    color: #EDDBC7;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+    transition: 0;/* time of transition*/
+ }
+ .menu-bar  ul li  a:hover {
+    color: #F9F5E7;
+ }
+ /*design the dropdown*/
+ #dropdown-menu{
+    display: block;
+    position: absolute;
+    width: 140px;
+    top: 40px;/* solve the dissapiring of the bar*/
+    left: 0;
+    visibility: hidden;
+    z-index: 1;/* item order of the element on the screen*/
+    cursor: grab;/**/
+    transition: 0;
+    font-size: small;
+ }
+
+ #dropdown-menu ul , #dropdown-menu li a{
+    display: block;
+    margin: 10px;
+    text-align: left;
+ }
+ li:hover ul#dropdown-menu {/* on the li menu i want the ul dropdown to appear*/
+    visibility: visible;
+    display: block;
+ }
+ /*********************************************************************************************/
+ /* first card*/
+.card1{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  margin: 100px 50px;
+  background-image: linear-gradient(to bottom right,#F9F5E7, #EDDBC7,#bb828e );/* make a grid color*/
+  /*background-image: url(../imag/1.jpg);
+  /*filter: blur(2px);*/
+  border-radius: 50px;
+  z-index:-1;
+}
+
+.content1{
+    width: 350px;
+    height: 450px;
+   background-color: #F9F5E7;
+    z-index: 6;
+    border-radius: 40px;
+}
+.imgin1{
+    background-image: url(../imag/1.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px 20px;
+    border-radius: 40px;
+}
+.content1 p{
+    font-size: larger;
+    font: bold;
+    color: #A7727D;
+    margin: 90px;
+}
+.content1 p{
+    background-color: #F9F5E7;
+    font-size: larger;
+    position: absolute;
+    margin: 20px 30px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.content1 h3{
+    color: #93626c;
+    font-size: medium;
+    position: relative;
+    margin:50px 10px;
+    margin-left:0 ;
+    font-weight:lighter;
+}
+.content1 .btn1{
+    color: #bb828e;
+    border: none;
+    box-shadow: 10px 5px 5px #bb828e;
+    transition: all 0.3s ease 0s;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    padding: 5px 50px;
+    position:relative;
+    margin: 0px 0px;
+    cursor: grab;
+}
+.btn1:hover{
+    color: #F9F5E7;
+    font-size: larger;
+    background-image: linear-gradient(to bottom right, #EDDBC7,#bb828e );/* make a grid color*/
+    transform: translateY(-7px);/*move the button*/
+    padding: 20px 80px;
+}
+/*card 2*/
+ .card2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    margin: 100px 500px ;
+    background-image: linear-gradient(to bottom right,#F9F5E7, #EDDBC7,#bb828e );/* make a grid color*/
+    /*background-image: url(../imag/1.jpg);
+    /*filter: blur(2px);*/
+    border-radius: 50px;
+    z-index:-1;
+  }
+  
+  .content2{
+      width: 350px;
+      height: 450px;
+      background-color: #F9F5E7;
+      z-index: 6;
+      border-radius: 40px;
+  }
+  .imgin2{
+      background-image: url(../imag/3.jpg);
+      background-position: center;
+      background-size:cover;
+      height: 300px;
+      width: 100%;
+      margin-top: 20px 20px;
+      border-radius: 40px;
+  }
+  .content2 p{
+      font-size: larger;
+      font: bold;
+      color: #A7727D;
+      margin: 90px;
+  }
+  .content2 p{
+      background-color: #F9F5E7;
+      font-size: larger;
+      position: absolute;
+      margin: 20px 30px;
+      margin-left: 40px;
+      font-weight: bold;
+  }
+  .content2 h3{
+      color: #93626c;
+      font-size: medium;
+      position: relative;
+      margin:50px 10px;
+      margin-left:0 ;
+      font-weight:lighter;
+  }
+  .content2 .btn1{
+      color: #bb828e;
+      border: none;
+      box-shadow: 10px 5px 5px #bb828e;
+      transition: all 0.3s ease 0s;
+      border-width: 1px;
+      border-radius: 5px;
+      font-size: medium;
+      font-weight: bold;
+      padding: 5px 50px;
+      position:relative;
+      margin: 0px 0px;
+      cursor: grab;
+  }
+  .btn1:hover{
+      color: #F9F5E7;
+      font-size: larger;
+      background-image: linear-gradient(to bottom right, #EDDBC7,#bb828e );/* make a grid color*/
+      transform: translateY(-7px);/*move the button*/
+      padding: 20px 80px;
+  }
+/*card 2*/
+.card3{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    margin: 100px 950px;
+    background-image: linear-gradient(to bottom right,#F9F5E7, #EDDBC7,#bb828e );/* make a grid color*/
+    /*background-image: url(../imag/1.jpg);
+    /*filter: blur(2px);*/
+    border-radius: 50px;
+    z-index:-1;
+  }
+  
+  .content3{
+      width: 350px;
+      height: 450px;
+      background-color: #F9F5E7;
+      z-index: 6;
+      border-radius: 40px;
+  }
+  .imgin3{
+      background-image: url(../imag/4.jpg);
+      background-position: center;
+      background-size:cover;
+      height: 300px;
+      width: 100%;
+      margin-top: 20px 20px;
+      border-radius: 40px;
+  }
+  .content3 p{
+      font-size: larger;
+      font: bold;
+      color: #A7727D;
+      margin: 90px;
+  }
+  .content3 p{
+      background-color: #F9F5E7;
+      font-size: larger;
+      position: absolute;
+      margin: 20px 30px;
+      margin-left: 40px;
+      font-weight: bold;
+  }
+  .content3 h3{
+      color: #93626c;
+      font-size: medium;
+      position: relative;
+      margin:50px 10px;
+      margin-left:0 ;
+      font-weight:lighter;
+  }
+  .content3 .btn1{
+      color: #bb828e;
+      border: none;
+      box-shadow: 10px 5px 5px #bb828e;
+      transition: all 0.3s ease 0s;
+      border-width: 1px;
+      border-radius: 5px;
+      font-size: medium;
+      font-weight: bold;
+      padding: 5px 50px;
+      position:relative;
+      margin: 0px 0px;
+      cursor: grab;
+  }
+  .btn1:hover{
+      color: #F9F5E7;
+      font-size: larger;
+      background-image: linear-gradient(to bottom right, #EDDBC7,#bb828e );/* make a grid color*/
+      transform: translateY(-7px);/*move the button*/
+      padding: 20px 80px;
+  }

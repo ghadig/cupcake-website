@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #F9F5E7;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu-bar{
+    background-color: #A7727D;
+    height: 80px;
+    width: 90%;
+    display: flex;/* items next to each other*/
+    align-items: center;/*center the bar items*/
+    justify-content: space-between;/* */
+    padding: 0 5%;/* the content in the middle of the bar*/
+}
+.logo{
+    background-color: #A7727D;
+    color: #F9F5E7;
+    font-family:'Edu TAS Beginner', cursive; 
+    font-size: 50px;
+}
+.logo span{
+    background-color: #A7727D;
+    color: #EDDBC7;
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+}
+/* design the search bar*/
+.search{
+    background: #A7727D;
+    display: inline;
+}
+form{
+    background-color:#A7727D;/******/
+    width: 260px;
+    height: 40px;
+}
+form input{
+    flex: 1;/*will use the intair plac ein the row*/
+    border: none;
+    outline: none;/*when i press to search no bordar will appear*/
+    height: 40px;
+    width: 190px;
+    color: #93626c;
+}
+form button{
+    padding: 11px;
+    background-color: #EDDBC7;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: #93626c;
+    cursor: grab;
+}
+form button:hover{
+    background-color: #F9F5E7;
+}
+/*design the list of links in the bar*/
+ .menu-bar ul{
+    list-style: none;/* remove the dot*/
+    display: flex;/* items next to each other*/
+ }
+
+ /*design the li each link*/
+ .menu-bar ul li{
+    background-color: #A7727D;
+    padding: 10px 30px;
+    position: relative;/**************/
+ }
+ /*design the links a*/
+ .menu-bar ul li a{
+    background-color: #A7727D;
+    text-decoration: none;
+    display: block;/**/
+    color: #EDDBC7;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Edu TAS Beginner', cursive;
+    transition: 0;/* time of transition*/
+ }
+ .menu-bar  ul li  a:hover {
+    color: #F9F5E7;
+ }
+ /*design the dropdown*/
+ #dropdown-menu{
+    display: block;
+    position: absolute;
+    width: 140px;
+    top: 40px;/* solve the dissapiring of the bar*/
+    left: 0;
+    visibility: hidden;
+    z-index: 1;/* item order of the element on the screen*/
+    cursor: grab;/**/
+    transition: 0;
+    font-size: small;
+ }
+
+ #dropdown-menu ul , #dropdown-menu li a{
+    display: block;
+    margin: 10px;
+    text-align: left;
+ }
+ li:hover ul#dropdown-menu {/* on the li menu i want the ul dropdown to appear*/
+    visibility: visible;
+    display: block;
+ }
+ /******************************************************************/
+ h2{
+    color: #93626c;
+    font-size: 40px;
+    margin: 20px 500px;
+    text-shadow: 2px 2px 5px #7a515a,0 0 25px #A7727D;
+ }
+ /*design the menu*/
+ .men{
+    display: inline-block;
+ }
+ .men .container1 .container2 .container3 {
+    display: inline-block;
+ }
+ .container1{
+    margin: 50px 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 270px;
+    height:max-content;
+    box-shadow: 2px 2px 5px #91877a;
+    padding: 20px;
+    border-radius: 5px;
+ }
+ .pho1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+ }
+ img{/*************************************************************all img in all containers*/
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #91877a;
+    margin: 0px 30px 0px 30px;
+ }
+ .txt1 {
+    padding: 15px;
+    margin: 3px 3px;
+ }
+.txt1 .top{
+    color: #7a515a;
+    font-size: 23px;
+    font-family: 'Edu TAS Beginner', cursive; 
+    line-height: 1.5;
+    font-weight: bold;
+}
+.txt1 .bot{
+    color: #A7727D;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.3;/* line btween rows*/
+}
+ .txt1 .btno{
+    font-size: 18px;
+    color: #7a515a;
+    padding: 10px;
+    position: absolute;
+    margin: 0px 100px 90px 190px;
+    border: none;
+    background-image: linear-gradient( to bottom right ,#F9F5E7, #EDDBC7,#bb828e ) ;
+}
+.btno:hover{
+    border-radius: 30px;
+    cursor: grab;
+    font-size: larger;
+    transition: all 0.5s ease;
+}
+
+/*container2*/
+.container2{
+    margin: 0px 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 270px;
+    height:max-content;
+    box-shadow: 2px 2px 5px #91877a;
+    padding: 20px;
+    border-radius: 5px;
+ }
+ .pho2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+    padding: 0px 0px;
+ }
+ .txt2 {
+    padding: 15px;
+    margin: 3px 3px;
+ }
+.txt2 .top{
+    color: #7a515a;
+    font-size: 23px;
+    font-family: 'Edu TAS Beginner', cursive; 
+    line-height: 1.5;
+    font-weight: bold;
+}
+.txt2 .bot{
+    color: #A7727D;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.3;/* line btween rows*/
+}
+ .txt2 .btno{
+    font-size: 18px;
+    color: #7a515a;
+    padding: 10px;
+    position: absolute;
+    margin: 0px 100px 90px 190px;
+    border: none;
+    background-image: linear-gradient( to bottom right ,#F9F5E7, #EDDBC7,#bb828e ) ;
+}
+.btno:hover{
+    border-radius: 30px;
+    cursor: grab;
+    font-size: larger;
+    transition: all 0.5s ease;
+}
+/*********************/
+.container3{
+    margin: 50px 50px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 270px;
+    height:max-content;
+    box-shadow: 2px 2px 5px #91877a;
+    padding: 20px;
+    border-radius: 5px;
+ }
